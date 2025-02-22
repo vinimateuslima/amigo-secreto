@@ -4,6 +4,12 @@ let amigo = document.getElementById("amigo");
 
 let arrayAmigos = [];
 
+document.addEventListener("keypress", (e) => {
+  if (e.code == "Enter") {
+    adicionarAmigo();
+  }
+});
+
 function adicionarAmigo() {
   if (amigo.value == "") {
     return alert("Digite um nome válido");
@@ -33,4 +39,11 @@ function sortearAmigo() {
   document.getElementById(
     "resultado"
   ).innerText = `O amigo secreto sorteado é: ${amigoSorteado}`;
+
+  contarSorteio();
+}
+
+function contarSorteio() {
+  let contador = document.getElementById("contador");
+  contador.innerText = parseInt(contador.innerText) + 1;
 }
