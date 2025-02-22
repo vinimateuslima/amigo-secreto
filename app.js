@@ -21,3 +21,16 @@ function atualizarLista(amigo) {
   listaAmigos.appendChild(li);
   arrayAmigos.push(amigo);
 }
+
+function sortearAmigo() {
+  if (arrayAmigos.length <= 0) {
+    return alert("A lista de amigos está vazia!");
+  }
+
+  let posicao = Math.floor(Math.random() * (arrayAmigos.length - 0) + 0);
+  let amigoSorteado = arrayAmigos[posicao];
+
+  document.getElementById(
+    "resultado"
+  ).innerText = `O amigo secreto sorteado é: ${amigoSorteado}`;
+}
