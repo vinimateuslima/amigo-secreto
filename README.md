@@ -1,6 +1,9 @@
 # Challenge Amigo Secreto
 Este projeto é um sorteador de nomes para um amigo secreto feito utilizando Html, Css e Javascript para o desafio do do programa ONE da Oracle junto com a Alura fins de aprendizado.
 
+![image](https://github.com/user-attachments/assets/4f6b20c2-ae0b-436e-a270-c05b4ba68ab4)
+
+
 
 ## 🛠️ Construído com
 
